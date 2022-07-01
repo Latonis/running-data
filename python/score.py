@@ -18,6 +18,8 @@ def main(file):
 
     print(f"Fitness\n>\t{obj.fitness}\nFatigue\n>\t{obj.fatigue}\nForm\n>\t{obj.form}")
 
+    obj.plotTSS()
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('file', type=argparse.FileType('r'))

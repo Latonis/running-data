@@ -29,6 +29,7 @@ class Runner:
                 self.fitness += self.tss[idx]
             if date in date_map_fatigue:
                 self.fatigue += self.tss[idx]
+                
         self.fitness = self.fitness/42
         self.fatigue = self.fatigue/7
         self.form = self.fitness - self.fatigue
